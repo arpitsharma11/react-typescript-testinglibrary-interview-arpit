@@ -1,5 +1,5 @@
 import React from 'react';
-import { render as rtlRender } from '@testing-library/react';
+import { render as rtlRender, screen } from '@testing-library/react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import {
@@ -41,4 +41,4 @@ function render(
 // re-export everything
 export * from '@testing-library/react';
 // override render method
-export { render };
+export { render, screen };
