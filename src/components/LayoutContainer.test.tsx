@@ -11,7 +11,7 @@ it('can browse to the about page', async () => {
 
   expect(screen.getByRole('heading').textContent).toBe('Welcome!');
   
-  const linkButton = screen.getByRole('link');
+  const linkButton = screen.getByRole('link'); // Not sure why this not working :thinking:
   userEvent.click(linkButton);
 
   
